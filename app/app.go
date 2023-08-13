@@ -16,7 +16,7 @@ func Gerar() *cli.App {
 	flags := []cli.Flag{
 		cli.StringFlag{
 			Name:  "host",
-			Value: "devbook.com.br",
+			Value: "eltonmelosantos.com.br",
 		},
 	}
 
@@ -28,11 +28,11 @@ func Gerar() *cli.App {
 			Action: buscarIps,
 		},
 		{
-			Name: "servidores",
+			Name:   "servidores",
 			Usage:  "Busca o nome de servidores na internet",
-			Flags: flags,
+			Flags:  flags,
 			Action: buscarServidores,
-		}
+		},
 	}
 
 	return app
